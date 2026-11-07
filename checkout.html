@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="hari-2-style.css">
+  <meta charset="UTF-8">
+  <title>Checkout Pesanan | Toko Valora</title>
+  <meta name="description" content="Selesaikan pesanan kamu di Toko Valora dengan mudah dan cepat, langsung terhubung ke WhatsApp untuk konfirmasi.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="header">
+  <h1>Toko Valora</h1>
+  <p>Fashion yang bikin kamu percaya diri</p>
+ <nav class="menu">
+  <a href="index.html">Beranda</a>
+  <a href="produk.html">Produk</a>
+  <a href="kontak.html">Kontak</a>
+  <a href="keranjang.html">Keranjang</a>
+</nav>
+  <div class="keranjang-info">
+    🛒 Keranjang: <span id="jumlah-keranjang">0</span>
+  </div>
+</div>
+<h2>Checkout Pesanan</h2>
+
+<form id="form-checkout" class="form-checkout">
+
+  <label for="nama">Nama Lengkap</label>
+  <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+
+  <label for="alamat">Alamat Pengiriman</label>
+  <textarea id="alamat" placeholder="Masukkan alamat lengkap" required></textarea>
+
+  <label for="produk">Produk yang Dipesan</label>
+  <input type="text" id="produk" placeholder="Contoh: Kemeja Linen x1" required>
+
+  <button type="submit" class="btn-checkout">Kirim Pesanan via WhatsApp</button>
+
+</form>
+
+<div class="footer">
+  <p>&copy; 2026 Toko Valora. Semua hak dilindungi.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

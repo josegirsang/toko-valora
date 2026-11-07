@@ -1,0 +1,480 @@
+/* ===== Pengaturan Umum ===== */
+body {
+  font-family: Arial, sans-serif;
+  color: #333333;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 20px;
+}
+
+/* ===== Judul Utama ===== */
+h1 {
+  color: #15346e;
+  text-align: center;
+}
+
+/* ===== Sub Judul ===== */
+h2 {
+  color: #15346e;
+  border-bottom: 2px solid #15346e;
+  padding-bottom: 5px;
+}
+
+/* ===== Paragraf ===== */
+p {
+  line-height: 1.6;
+}
+
+/* ===== Gambar ===== */
+img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* ===== List ===== */
+li {
+  margin-bottom: 8px;
+}
+
+/* ===== Link ===== */
+a {
+  color: #25D366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ===== Header Toko ===== */
+.header {
+  background-color: #15346e;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+}
+
+.header p {
+  color: #d0d8e8;
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+
+/* ===== Efek Hover ===== */
+a:hover {
+  color: #128C4A;
+  text-decoration: underline;
+}
+
+li {
+  transition: color 0.2s;
+}
+
+li:hover {
+  color: #15346e;
+}
+
+/* ===== Footer ===== */
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #15346e;
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ===== Grid Produk (Flexbox) ===== */
+.produk-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.produk-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.produk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.produk-card img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 4px;
+  margin: 0 0 10px 0;
+}
+
+.produk-card h3 {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333333;
+}
+
+.harga {
+  color: #15346e;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ===== Responsive: Layar Tablet & HP ===== */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .produk-card {
+    width: 45%;
+  }
+}
+
+/* ===== Responsive: Layar HP Kecil ===== */
+@media (max-width: 480px) {
+  .produk-card {
+    width: 100%;
+  }
+
+  .header {
+    padding: 20px 10px;
+  }
+}
+
+/* ===== Menu Navigasi ===== */
+.menu {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  margin: 0 15px;
+  font-size: 15px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+  transition: border-color 0.2s;
+}
+
+.menu a:hover {
+  border-color: white;
+}
+
+.deskripsi {
+  font-size: 13px;
+  color: #777777;
+  margin: 5px 0;
+}
+
+/* ===== Testimoni ===== */
+.testimoni-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.testimoni-card {
+  background-color: #f0f4fa;
+  border-left: 4px solid #15346e;
+  padding: 15px 20px;
+  width: 280px;
+  border-radius: 4px;
+}
+
+.testimoni-teks {
+  font-style: italic;
+  color: #444444;
+  margin: 0 0 8px 0;
+}
+
+.testimoni-nama {
+  font-weight: bold;
+  color: #15346e;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ===== Tombol Tambah ke Keranjang ===== */
+.btn-tambah {
+  background-color: #15346e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.btn-tambah:hover {
+  background-color: #1e4a94;
+}
+
+/* ===== Info Keranjang ===== */
+.keranjang-info {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+#jumlah-keranjang {
+  font-weight: bold;
+  background-color: white;
+  color: #15346e;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* ===== Form Checkout ===== */
+.form-checkout {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-checkout label {
+  font-weight: bold;
+  color: #15346e;
+  margin-top: 10px;
+}
+
+.form-checkout input,
+.form-checkout textarea {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.form-checkout textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-checkout button {
+  margin-top: 15px;
+  align-self: center;
+}
+
+/* ===== Tombol Checkout ===== */
+.btn-checkout {
+  background-color: #15346e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.btn-checkout:hover {
+  background-color: #1e4a94;
+}
+
+/* ===== Halaman Keranjang ===== */
+.daftar-keranjang {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.item-keranjang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.item-keranjang-info h4 {
+  margin: 0 0 5px 0;
+  color: #333333;
+}
+
+.item-keranjang-info p {
+  margin: 0;
+  color: #15346e;
+  font-weight: bold;
+}
+
+.btn-hapus {
+  background-color: #d64545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-hapus:hover {
+  background-color: #b53838;
+}
+
+.total-harga {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #15346e;
+}
+
+.btn-checkout-link {
+  display: block;
+  max-width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ===== Link Nama Produk ===== */
+.produk-card h3 a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.produk-card h3 a:hover {
+  color: #15346e;
+  text-decoration: underline;
+}
+
+/* ===== Detail Produk ===== */
+.detail-produk-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.detail-produk-container img {
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+}
+
+.detail-produk-container h2 {
+  border: none;
+}
+
+.detail-produk-harga {
+  font-size: 22px;
+  font-weight: bold;
+  color: #15346e;
+  margin: 10px 0;
+}
+
+.detail-produk-deskripsi {
+  text-align: left;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.keranjang-kosong {
+  text-align: center;
+  color: #777777;
+  padding: 40px 20px;
+  font-size: 16px;
+}
+
+/* ===== Toast Notification ===== */
+.toast-notif {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #15346e;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.toast-notif.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Badge Produk ===== */
+.produk-card {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #d64545;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 12px;
+  z-index: 10;
+}
+
+.detail-produk-container {
+  position: relative;
+}
+
+.detail-produk-container .badge {
+  top: 20px;
+  left: 20px;
+}
+
+/* ===== Filter Urutkan ===== */
+.filter-container {
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  text-align: right;
+  padding: 0 20px;
+}
+
+.filter-container label {
+  font-weight: bold;
+  color: #15346e;
+  margin-right: 8px;
+}
+
+.filter-container select {
+  padding: 6px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}

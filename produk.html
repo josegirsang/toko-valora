@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="hari-2-style.css">
+  <meta charset="UTF-8">
+  <title>Produk Fashion - Kemeja, Celana, Tas & Jaket | Toko Valora</title>
+  <meta name="description" content="Jelajahi koleksi produk fashion Toko Valora: kemeja linen, celana chino, tas selempang, dan jaket kulit dengan kualitas terbaik dan harga terjangkau.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="header">
+  <h1>Toko Valora</h1>
+  <p>Fashion yang bikin kamu percaya diri</p>
+ <nav class="menu">
+  <a href="index.html">Beranda</a>
+  <a href="produk.html">Produk</a>
+  <a href="tentang.html">Tentang Kami</a>
+  <a href="kontak.html">Kontak</a>
+  <a href="keranjang.html">Keranjang</a>
+</nav>
+  <div class="keranjang-info">
+    🛒 Keranjang: <span id="jumlah-keranjang">0</span>
+  </div>
+</div>
+
+<h2>Produk Kami</h2>
+
+<div class="filter-container">
+  <label for="urutkan">Urutkan:</label>
+  <select id="urutkan">
+    <option value="default">Default</option>
+    <option value="termurah">Harga: Termurah</option>
+    <option value="termahal">Harga: Termahal</option>
+  </select>
+</div>
+
+<div id="produk-container" class="produk-container">
+  <!-- Card produk akan muncul otomatis di sini lewat JavaScript -->
+</div>
+
+<h2>Kata Pelanggan Kami</h2>
+<div class="testimoni-container">
+
+  <div class="testimoni-card">
+    <p class="testimoni-teks">"Bahan bagus, pengiriman cepat. Pasti order lagi!"</p>
+    <p class="testimoni-nama">— Rina, Jakarta</p>
+  </div>
+
+  <div class="testimoni-card">
+    <p class="testimoni-teks">"Kualitas sesuai harga, gak nyesel beli di sini."</p>
+    <p class="testimoni-nama">— Budi, Surabaya</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>&copy; 2026 Toko Valora. Semua hak dilindungi.</p>
+</div>
+<div id="toast-notif" class="toast-notif"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
